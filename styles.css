@@ -1,8 +1,13 @@
+..img1 {
+  float: left;
+  padding-left: 12%;
+}
+
 .container {
   display: inline-block;
   cursor: pointer;
   float: right;
-  padding-right: 1.13%;
+  padding-right: 12%;
 }
 
 .bar1, .bar2, .bar3 {
@@ -16,11 +21,26 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
   padding: 10px;
 }
-.grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.item3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 5;
 }
