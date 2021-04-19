@@ -90,6 +90,35 @@
   margin-right: 12%;
 }
 
+.item7 {
+  height: 350px;
+  background-color: #EAEDF4;
+  border-radius: 30px;
+  margin-top: 40%;
+  margin-right: 12%;
+}
+
+.item8 {
+  height: 350px;
+  background-color: #FBB883;
+  border-radius: 30px;
+  margin-left: 12%;
+}
+
+.item9 {
+  height: 350px;
+  background-color: #283A75;
+  border-radius: 30px;
+  margin-left: 12%;
+}
+
+.item10 {
+  height: 350px;
+  background-color: #EAEDF4;
+  border-radius: 30px;
+  margin-right: 12%;
+}
+
 .photo1 > img {
   object-fit: cover;
   width: 70%;
