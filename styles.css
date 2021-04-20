@@ -96,7 +96,7 @@
   height: 350px;
   background-color: #EAEDF4;
   border-radius: 30px;
-  margin-top: 40%;
+  margin-top: 43%;
   margin-right: 12%;
 }
 
@@ -141,7 +141,7 @@
   height: 175px;
   background-color: #283A75;
   border-radius: 30px;
-  margin-top: 40%;
+  margin-top: 37%;
   margin-left: 12%;
 }
 
@@ -211,7 +211,7 @@
 }
 
 .photo3 > img {
-  margin-top: -110%;
+  margin-top: -105%;
   margin-left: -20%;
   object-fit: fill;
   width: 140%;
@@ -269,8 +269,8 @@ font-size: 32px;
 }
 
 .text3 {
-  margin-top: 70%;
-  padding-right: 20%;
+  margin-top: 60%;
+  padding-right: 45%;
   text-align: left;
   color: black;
   margin-left: 5%;
@@ -327,6 +327,72 @@ font-size: 32px;
 
 .text6 > h3 {
 font-size: 32px;
+}
+
+.text7 {
+  padding-right: 15%;
+  text-align: left;
+  text-align: justify;
+  color: black;
+  margin-left: 5%;
+}
+
+.text7 > h3 {
+font-size: 32px;
+}
+
+.text7 > p {
+  font-size: 20px;
+}
+
+.text8 {
+  padding-right: 15%;
+  text-align: left;
+  text-align: justify;
+  color: white;
+  margin-left: 5%;
+}
+
+.text8 > h3 {
+  font-size: 32px;
+}
+
+.text8 > p {
+  font-size: 20px;
+}
+
+.text9 {
+  margin-top: 20%;
+  padding-right: 15%;
+  text-align: left;
+  text-align: justify;
+  color: white;
+  margin-left: 5%;
+}
+
+.text9 > h3 {
+  font-size: 32px;
+}
+
+.text9 > p {
+  font-size: 20px;
+}
+
+.text10 {
+  margin-top: 20%;
+  padding-right: 15%;
+  text-align: left;
+  text-align: justify;
+  color: black;
+  margin-left: 5%;
+}
+
+.text10 > h3 {
+  font-size: 32px;
+}
+
+.text10 > p {
+  font-size: 20px;
 }
 
 .footer {
