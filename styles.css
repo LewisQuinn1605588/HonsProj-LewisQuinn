@@ -25,6 +25,8 @@
 .mainheading {
   text-align: center;
   padding-top: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .grid-container {
@@ -116,6 +118,22 @@
   height: 350px;
   background-color: #EAEDF4;
   border-radius: 30px;
+  margin-right: 12%;
+}
+
+.item11 {
+    height: 350px;
+    background-color: #8BB6E0;
+    border-radius: 30px;
+    margin-top: 20%;
+    margin-left: 12%;
+}
+
+.item12 {
+  height: 350px;
+  background-color: #A5D4CE;
+  border-radius: 30px;
+  margin-top: 20%;
   margin-right: 12%;
 }
 
