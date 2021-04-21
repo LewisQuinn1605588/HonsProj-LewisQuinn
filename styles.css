@@ -189,8 +189,42 @@
 }
 
 .item20 {
-  height: 175px;
+  height: 750px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: #283A75;
+  border-radius: 30px;
+  margin-top: 43%;
+  margin-left: 12%;
+}
+
+.item21 {
+  height: 350px;
+  background-color: #A5D4CE;
+  border-radius: 30px;
+  margin-left: 12%;
+}
+
+.item22 {
+  height: 350px;
+  background-color: #8BB6E0;
+  border-radius: 30px;
+  margin-right: 12%;
+  /* margin-top: -54.5%; */
+}
+
+.item23 {
+  height: 350px;
   background-color: #EAEDF4;
+  border-radius: 30px;
+  margin-top: 43%;
+  margin-right: 12%;
+}
+
+.item24 {
+  height: 350px;
+  background-color: #F7E19C;
   border-radius: 30px;
   margin-right: 12%;
 }
@@ -393,6 +427,54 @@ font-size: 32px;
 
 .text10 > p {
   font-size: 20px;
+}
+
+.text11 {
+  padding-right: 15%;
+  text-align: left;
+  text-align: justify;
+  color: black;
+  margin-left: 5%;
+}
+
+.text11 > h1 {
+  font-size: 54px;
+}
+
+.text11 > h2 {
+  font-size: 32px;
+}
+
+.text11 > h3 {
+font-size: 24px;
+}
+
+.text11 > p {
+  font-size: 20px;
+}
+
+.incomeGraph {
+  margin-top: 15%;
+}
+
+.expenseGraph {
+  margin-top: 10%;
+}
+
+.balanceSheet {
+  display: inline;
+}
+
+.balanceSheetTitle {
+  display: inline-block;
+}
+
+.balanceSheetMid {
+  display: inline-block;
+}
+
+.balanceSheetRes {
+  display: inline-block;
 }
 
 .footer {
