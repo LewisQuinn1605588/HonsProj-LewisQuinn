@@ -218,7 +218,7 @@
   height: 350px;
   background-color: #EAEDF4;
   border-radius: 30px;
-  margin-top: 43%;
+  margin-top: 15%;
   margin-right: 12%;
 }
 
@@ -452,6 +452,31 @@ font-size: 24px;
 .text11 > p {
   font-size: 20px;
 }
+
+.text12 {
+  padding-right: 30%;
+  text-align: left;
+  text-align: justify;
+  color: black;
+  margin-left: 5%;
+}
+
+.text12 > h1 {
+  font-size: 54px;
+}
+
+.text12 > h2 {
+  font-size: 32px;
+}
+
+.text12 > h3 {
+font-size: 24px;
+}
+
+.text12 > p {
+  font-size: 20px;
+}
+
 
 .incomeGraph {
   margin-top: 15%;
