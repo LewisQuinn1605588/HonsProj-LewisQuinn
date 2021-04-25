@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TC Accounting - Bank Account</title>
+    <link rel="stylesheet" href="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\styles.css">
+    <link rel="script" href="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="">
+      <div class="img1">
+          <img src="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\img\TC Logo.png" class="img1" alt="TC Accounting Logo">
+      </div>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+
+    <div class="mainheading">
+      <h1>Heading One</h1>
+      <h2>Subheading Two</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="cardgrid">
+          <div class="griditem">
+            <aside class="side">
+              <div class="FormInfo">
+                <h2>Financial Year Dates</h2>
+                <p>Choose when your financial year starts and ends. Choose a ‘Lockdown’ date to stop new transactions being saved before this.</p>
+              </div>
+            </aside>
+          </div>
+          <div class="griditem">
+            <nav class="main-nav">
+              <div class="container2">
+                <form action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">Year End Date</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="date" id="birthday" name="birthday">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Year End Lockdown</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="date" id="birthday" name="birthday">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Accounts Start Date</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="date" id="birthday" name="birthday">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardgrid">
+          <div class="griditem">
+            <aside class="side">
+              <div class="FormInfo">
+                <h2>Business Data Retention Period</h2>
+                <p>Choose how long you need to keep your accounting records. We’ll use this to calculate how long you should keep your contact’s personal data. This is important for complying with data protection laws.</p>
+              </div>
+            </aside>
+          </div>
+          <div class="griditem">
+            <nav class="main-nav">
+              <div class="container2">
+                <form action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">End of Tax Year</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="date" id="birthday" name="birthday">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Accounts Start Date</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="years" name="years">
+                        <option value="One Year">1</option>
+                        <option value="Two Years">2</option>
+                        <option value="Three Years">3</option>
+                        <option value="Four Years">4</option>
+                        <option value="Five Years">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardgrid">
+          <div class="griditem">
+            <aside class="side">
+              <div class="FormInfo">
+                <h2>VAT Details</h2>
+                <p>Enter details of your VAT registration, including how often you’ll submit VAT returns to HMRC. Enter your HMRC User ID to submit VAT returns directly from Accounting.</p>
+              </div>
+            </aside>
+          </div>
+          <div class="griditem">
+            <nav class="main-nav">
+              <div class="container2">
+                <form action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">End of Tax Year</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="VAT" name="VAT">
+                        <option value="Cash">Cash Accounting</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Nothing">Not Registered </option>
+                        <option value="FlatCash">Flat Rate Cash</option>
+                        <option value="FlatInvoice">Flat Rate Invoice </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Submission Frequency</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="Frequency" name="Frequency">
+                        <option value="One Year">1</option>
+                        <option value="Two Years">2</option>
+                        <option value="Three Years">3</option>
+                        <option value="Four Years">4</option>
+                        <option value="Five Years">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">VAT Number</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="VATnumber" name="VATnumber">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">HMRC User ID</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="HMRC" name="HMRC">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="l-footer">
+        <h1>
+        <img src="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\img\TC Logo.png" alt="" width="70px" height="70px"></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+            <div class="b-footer">
+              <!-- <p>All rights reserved by ©CompanyName 2020 </p> -->
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+          <ul class="r-footer">
+            <li>
+                <!-- <h2>Legal</h2> -->
+                  <ul class="box">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Tax Forms</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                  <!-- <ul class="box">
+
+                  </ul> -->
+            </li>
+          </ul>
+
+    </footer>
+  </body>
+</html>

@@ -29,6 +29,173 @@
   padding-right: 15%;
 }
 
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 30rem;
+  border-radius: 30px;
+  align-content: center;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+/* @media (min-width: 600px) {
+  .cards2 { grid-template-columns: repeat(2, 1fr); }
+} */
+
+/* @media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+} */
+
+.main-nav {
+  grid-area: nav;
+  width: auto;
+  height: auto;
+  display: inline;
+}
+
+.side {
+  grid-area: sidebar;
+  display: inline;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "nav"
+    "sidebar";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "sidebar sidebar"
+      "nav nav";
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "sidebar sidebar sidebar"
+      "nav nav nav"
+   }
+ }
+
+.FormInfo {
+  color: black;
+  text-align: justify;
+  width: 35%;
+  height: 100px;
+  margin-left: 20px;
+  position: sticky;
+  /* align-content: center; */
+  /* position: absolute; */
+  /* display: inline-block; */
+  margin-top: auto;
+  margin-bottom: auto;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.FormInfo > h2 {
+  margin-top: 2em;
+}
+
+.FormInfo > p {
+  margin-top: 4em;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=date], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: black;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+}
+
+/* Style the container */
+.container2 {
+  border-radius: 5px;
+  /* background-color: #000000; */
+  padding: 20px;
+  margin-top: -60px;
+  /* display: block; */
+  position: sticky;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-right: -5px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 45%;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 35%;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
