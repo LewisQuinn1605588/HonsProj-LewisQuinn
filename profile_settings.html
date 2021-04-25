@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TC Accounting - Profile Settings</title>
+    <link rel="stylesheet" href="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\styles.css">
+    <link rel="script" href="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="">
+      <div class="img1">
+          <img src="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\img\TC Logo.png" class="img1" alt="TC Accounting Logo">
+      </div>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+
+    <div class="mainheading">
+      <h1>Heading One</h1>
+      <h2>Subheading Two</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card2">
+        <div class="cardgrid">
+          <div class="griditem">
+            <aside class="side">
+              <div class="FormInfo">
+                <h2>Basic Information</h2>
+                <p></p>
+              </div>
+            </aside>
+          </div>
+          <div class="griditem">
+            <nav class="main-nav">
+              <div class="container2">
+                <form action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="forename" name="forename">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Surname</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="Surname" name="Surname">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Job Title</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="jobTitle" name="jobTitle">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Business Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="busName" name="busName">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">County</label>
+                    </div>
+                    <div class="col-75">
+                      <select name="county">
+                        <optgroup label="England">
+                            <option>Bedfordshire</option>
+                            <option>Berkshire</option>
+                            <option>Bristol</option>
+                            <option>Buckinghamshire</option>
+                            <option>Cambridgeshire</option>
+                            <option>Cheshire</option>
+                            <option>City of London</option>
+                            <option>Cornwall</option>
+                            <option>Cumbria</option>
+                            <option>Derbyshire</option>
+                            <option>Devon</option>
+                            <option>Dorset</option>
+                            <option>Durham</option>
+                            <option>East Riding of Yorkshire</option>
+                            <option>East Sussex</option>
+                            <option>Essex</option>
+                            <option>Gloucestershire</option>
+                            <option>Greater London</option>
+                            <option>Greater Manchester</option>
+                            <option>Hampshire</option>
+                            <option>Herefordshire</option>
+                            <option>Hertfordshire</option>
+                            <option>Isle of Wight</option>
+                            <option>Kent</option>
+                            <option>Lancashire</option>
+                            <option>Leicestershire</option>
+                            <option>Lincolnshire</option>
+                            <option>Merseyside</option>
+                            <option>Norfolk</option>
+                            <option>North Yorkshire</option>
+                            <option>Northamptonshire</option>
+                            <option>Northumberland</option>
+                            <option>Nottinghamshire</option>
+                            <option>Oxfordshire</option>
+                            <option>Rutland</option>
+                            <option>Shropshire</option>
+                            <option>Somerset</option>
+                            <option>South Yorkshire</option>
+                            <option>Staffordshire</option>
+                            <option>Suffolk</option>
+                            <option>Surrey</option>
+                            <option>Tyne and Wear</option>
+                            <option>Warwickshire</option>
+                            <option>West Midlands</option>
+                            <option>West Sussex</option>
+                            <option>West Yorkshire</option>
+                            <option>Wiltshire</option>
+                            <option>Worcestershire</option>
+                        </optgroup>
+                        <optgroup label="Wales">
+                            <option>Anglesey</option>
+                            <option>Brecknockshire</option>
+                            <option>Caernarfonshire</option>
+                            <option>Carmarthenshire</option>
+                            <option>Cardiganshire</option>
+                            <option>Denbighshire</option>
+                            <option>Flintshire</option>
+                            <option>Glamorgan</option>
+                            <option>Merioneth</option>
+                            <option>Monmouthshire</option>
+                            <option>Montgomeryshire</option>
+                            <option>Pembrokeshire</option>
+                            <option>Radnorshire</option>
+                        </optgroup>
+                        <optgroup label="Scotland">
+                            <option>Aberdeenshire</option>
+                            <option>Angus</option>
+                            <option>Argyllshire</option>
+                            <option>Ayrshire</option>
+                            <option>Banffshire</option>
+                            <option>Berwickshire</option>
+                            <option>Buteshire</option>
+                            <option>Cromartyshire</option>
+                            <option>Caithness</option>
+                            <option>Clackmannanshire</option>
+                            <option>Dumfriesshire</option>
+                            <option>Dunbartonshire</option>
+                            <option>East Lothian</option>
+                            <option>Fife</option>
+                            <option>Inverness-shire</option>
+                            <option>Kincardineshire</option>
+                            <option>Kinross</option>
+                            <option>Kirkcudbrightshire</option>
+                            <option>Lanarkshire</option>
+                            <option>Midlothian</option>
+                            <option>Morayshire</option>
+                            <option>Nairnshire</option>
+                            <option>Orkney</option>
+                            <option>Peeblesshire</option>
+                            <option>Perthshire</option>
+                            <option>Renfrewshire</option>
+                            <option>Ross-shire</option>
+                            <option>Roxburghshire</option>
+                            <option>Selkirkshire</option>
+                            <option>Shetland</option>
+                            <option>Stirlingshire</option>
+                            <option>Sutherland</option>
+                            <option>West Lothian</option>
+                            <option>Wigtownshire</option>
+                        </optgroup>
+                        <optgroup label="Northern Ireland">
+                            <option>Antrim</option>
+                            <option>Armagh</option>
+                            <option>Down</option>
+                            <option>Fermanagh</option>
+                            <option>Londonderry</option>
+                            <option>Tyrone</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">City/ Town</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="locName" name="locName">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="cardgrid">
+          <div class="griditem">
+            <aside class="side">
+              <div class="FormInfo">
+                <h2>Personal Contact Details</h2>
+                <p></p>
+              </div>
+            </aside>
+          </div>
+          <div class="griditem">
+            <nav class="main-nav">
+              <div class="container2">
+                <form action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">Personal Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="phoneNum" name="phoneNum">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Personal Website</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="website" name="website">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="l-footer">
+        <h1>
+        <img src="C:\Users\lquin\OneDrive\Documents\4th\Hons Project\Website\HonsProj-LewisQuinn\img\TC Logo.png" alt="" width="70px" height="70px"></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+            <div class="b-footer">
+              <!-- <p>All rights reserved by ©CompanyName 2020 </p> -->
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+          <ul class="r-footer">
+            <li>
+                <!-- <h2>Legal</h2> -->
+                  <ul class="box">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Tax Forms</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                  <!-- <ul class="box">
+
+                  </ul> -->
+            </li>
+          </ul>
+
+    </footer>
+  </body>
+</html>
