@@ -400,6 +400,47 @@ ul.topnav li a.active {
   margin-right: 12%;
 }
 
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 0px -10px 0px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .FormInfo {
   color: black;
   text-align: justify;
@@ -407,9 +448,6 @@ ul.topnav li a.active {
   height: 100px;
   margin-left: 20px;
   position: sticky;
-  /* align-content: center; */
-  /* position: absolute; */
-  /* display: inline-block; */
   margin-top: auto;
   margin-bottom: auto;
   box-sizing: border-box;
