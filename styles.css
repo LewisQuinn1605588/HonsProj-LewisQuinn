@@ -406,8 +406,94 @@ ul.topnav li a.active {
   align-items: center;
 }
 
+.date2 {
+  margin-left: 34px;
+}
+
+.select2 {
+  margin-left: 33px;
+}
+
+.submit2 > input[type=submit] {
+  width: 17%;
+  background-color: #283A75;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+}
+
+.date2 > input[type=date], select, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+table.blueTable {
+  margin-top: 150px;
+  border: 1px solid #1C6EA4;
+  width: 70%;
+  height: 140px;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 0px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable thead {
+  background: #1C6EA4;
+}
+table.blueTable thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+table.blueTable2 {
+  margin-top: -140px;
+  float: right;
+  border: 1px solid #1C6EA4;
+  width: 30.2%;
+  height: 140px;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable2 td, table.blueTable2 th {
+  border: 0px solid #AAAAAA;
+  padding: 3px 2px;
+}
+
+table.blueTable2 thead {
+  background: #1C6EA4;
+}
+table.blueTable2 thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.box1 {
+  width: 30%;
+  height: 118px;
+  border: 1px solid #1C6EA4;
+  float: right;
+  margin-top: -120px;
+}
+
 .form-inline label {
-  margin: 0px -10px 0px 0;
+  margin: 5px 10px 5px 0;
 }
 
 .form-inline input {
