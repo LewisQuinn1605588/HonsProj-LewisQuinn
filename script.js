@@ -32,3 +32,11 @@ function addPurchase() {
 
   document.getElementById("tb1").appendChild(tr);
 }
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
