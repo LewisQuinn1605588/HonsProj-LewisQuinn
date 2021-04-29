@@ -1,4 +1,18 @@
+a:link {
+  text-decoration: none;
+}
 
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
 
 .img1 {
   padding-top: 0.5%;
@@ -274,7 +288,7 @@
 }
 
 .card {
-  background-color: dodgerblue;
+  background-color: #8BB6E0;
   color: white;
   padding: 1rem;
   height: 30rem;
@@ -283,7 +297,7 @@
 }
 
 .card2 {
-  background-color: dodgerblue;
+  background-color: #8BB6E0;
   color: white;
   padding: 1rem;
   height: 35rem;
@@ -292,7 +306,43 @@
 }
 
 .card3 {
-  background-color: dodgerblue;
+  background-color: #8BB6E0;
+  color: white;
+  padding: 1rem;
+  height: 20rem;
+  border-radius: 30px;
+  align-content: center;
+}
+
+.card4 {
+  background-color: #283A75;
+  color: white;
+  padding: 1rem;
+  height: 20rem;
+  border-radius: 30px;
+  align-content: center;
+}
+
+.card5 {
+  background-color: #EAEDF4;
+  color: white;
+  padding: 1rem;
+  height: 20rem;
+  border-radius: 30px;
+  align-content: center;
+}
+
+.card6 {
+  background-color: #FBB883;
+  color: white;
+  padding: 1rem;
+  height: 20rem;
+  border-radius: 30px;
+  align-content: center;
+}
+
+.card7 {
+  background-color: #F7E19C;
   color: white;
   padding: 1rem;
   height: 20rem;
@@ -302,16 +352,20 @@
 
 .cards {
   max-width: 1200px;
-  margin: 0 auto;
+  height: auto;
+  margin: auto;
   display: grid;
   grid-gap: 1rem;
+  margin-top: 10%;
 }
 
 .cards2 {
   max-width: 1200px;
+  height: auto;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+  margin-top: 10%;
 }
 
 .grid-item {
@@ -1457,6 +1511,25 @@ table.expenseTable {
   color: black;
 }
 
+#my-div {
+    background-color: #283A75;
+    width: auto;
+    height: auto;
+}
+
+#my-div2 {
+    background-color: #EAEDF4;
+    width: auto;
+    height: auto;
+}
+
+a.fill-div {
+    display: block;
+    height: 90%;
+    width: 100%;
+    text-decoration: none;
+}
+
 .dropbtn {
   background-color: #F7E19C;
   opacity: 0.7;
@@ -1580,6 +1653,7 @@ padding-top: 50px;
 padding-right: 5%;
 color: #000000;
 font-size: 20px;
+text-align: justify;
 }
 
 @media screen and (min-width: 600px) {
