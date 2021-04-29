@@ -37,7 +37,7 @@
       <h2>Connect your business bank account, credit card to connect your (app name) account to automatically import your transactions and tax returns</h2>
     </div>
 
-    <div class="container4">
+    <div class="container6">
       <div class="dropdown">
         <button class="dropbtn">
           <p>New</p>
@@ -47,23 +47,58 @@
           <a href="#">Purchase/ Payment</a>
           <a href="#">Sales/ Receipt</a>
           <a class="open-button" onclick="openForm()" href="#">Bank Transfer</a>
-          <a href="#">Bank Account</a>
+          <a class="open-button" onclick="openForm2()" href="#">Bank Account</a>
         </div>
       </div>
     </div>
 
-
     <div class="form-popup" id="myForm">
       <form action="/action_page.php" class="form-container">
-        <h1>Login</h1>
+        <h1>Bank Transfer</h1>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="text"><b>Paid From Account</b></label>
+        <input type="text" placeholder="Account Name" name="email" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="psw"><b>Paid Into Account</b></label>
+        <input type="text" placeholder="Account Name" name="psw" required>
 
-        <button type="submit" class="btn">Login</button>
+        <label for="psw"><b>Method</b></label>
+        <input type="text" placeholder="Method Type" name="psw" required>
+
+        <label for="psw"><b>Amount</b></label>
+        <input type="text" placeholder="£0.00" name="psw" required>
+
+        <label for="psw"><b>Date</b></label>
+        <input type="date" placeholder="01/01/2021" name="psw" required>
+
+        <label for="psw"><b>Reference </b></label>
+        <input type="text" placeholder="ref" name="psw" required>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+    <div class="form-popup" id="myForm2">
+      <form action="/action_page.php" class="form-container">
+        <h1>Add Account</h1>
+
+        <label for="text"><b>Account Type</b></label>
+        <input type="text" placeholder="Standard" name="email" required>
+
+        <label for="psw"><b>Account Name</b></label>
+        <input type="text" placeholder="Account Name" name="psw" required>
+
+        <label for="psw"><b>Opening Balance</b></label>
+        <input type="text" placeholder="£0.00" name="psw" required>
+
+        <label for="psw"><b>Current Date</b></label>
+        <input type="date" placeholder="01/01/2021" name="psw" required>
+
+        <label for="psw"><b>Overdrawn Balance</b></label>
+        <input type="text" placeholder="£0.00" name="psw" required>
+
+        <button type="submit" class="btn">Submit</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
