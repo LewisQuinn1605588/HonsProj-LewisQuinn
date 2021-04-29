@@ -307,13 +307,20 @@
   grid-gap: 1rem;
 }
 
+.cards2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
 .grid-item {
   padding: 20px;
 }
 
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
   .cards2 { grid-template-columns: repeat(2, 1fr); }
-} */
+}
 
 /* @media (min-width: 900px) {
   .cards { grid-template-columns: repeat(3, 1fr); }
@@ -1323,11 +1330,11 @@ font-size: 32px;
 }
 
 .text11 {
-  padding-right: 15%;
-  text-align: left;
-  text-align: justify;
+  /* padding-right: 15%; */
+  text-align: center;
+  /* text-align: justify; */
   color: white;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 .text11 > h1 {
@@ -1370,13 +1377,31 @@ font-size: 24px;
   font-size: 20px;
 }
 
+.inline-graph {
+  display: inline;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.graph-line {
+  width: 60%;
+  border-bottom: 3px solid red;
+  margin: auto;
+}
 
 .incomeGraph {
-  margin-top: 15%;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  margin-right: 10%;
 }
 
 .expenseGraph {
-  margin-top: 10%;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  margin-left: 10%;
 }
 
 .balanceSheet {
@@ -1410,6 +1435,26 @@ font-size: 24px;
 
 .balanceInfo > p {
   font-size: 16px;
+}
+
+.grossProfitDef {
+  text-align: center;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+table.expenseTable, td, th {
+  border: 1px solid black;
+}
+
+table.expenseTable {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
 }
 
 .dropbtn {
