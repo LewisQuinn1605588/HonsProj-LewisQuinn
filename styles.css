@@ -127,7 +127,7 @@ a:active {
   left: 50%;
 }
 
-.sub1 > input[type=submit] {
+.sub1 > input[type=button] {
   background-color: white;
   color: black;
   padding: 12px 20px;
@@ -135,7 +135,25 @@ a:active {
   border-radius: 4px;
   cursor: pointer;
   /* float: right; */
-  margin-top: 30px;
+  height: auto;
+  width: 200%;
+}
+
+.sub2 {
+  position: absolute;
+  left: 50%;
+  margin-top: 50px;
+}
+
+.sub2 > input[type=button] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float: right; */
+ height: auto;
   width: 200%;
 }
 
@@ -216,13 +234,13 @@ a:active {
 
 .contentContainer {
   margin: auto;
-  padding-top: 10%;
+  padding-top: 7%;
   width: 500px;
 }
 
 .contentContainer2 {
   margin: auto;
-  padding-top: 3%;
+  padding-top: 1%;
   width: 500px;
 }
 
@@ -309,7 +327,7 @@ a:active {
   background-color: #8BB6E0;
   color: white;
   padding: 1rem;
-  height: 20rem;
+  height: 20balanrem;
   border-radius: 30px;
   align-content: center;
 }
@@ -318,7 +336,7 @@ a:active {
   background-color: #283A75;
   color: white;
   padding: 1rem;
-  height: 20rem;
+  height: 25rem;
   border-radius: 30px;
   align-content: center;
 }
@@ -327,16 +345,16 @@ a:active {
   background-color: #EAEDF4;
   color: white;
   padding: 1rem;
-  height: 20rem;
+  height: 25rem;
   border-radius: 30px;
   align-content: center;
 }
 
 .card6 {
-  background-color: #FBB883;
+  background-color: #A5D4CE;
   color: white;
   padding: 1rem;
-  height: 20rem;
+  height: 25rem;
   border-radius: 30px;
   align-content: center;
 }
@@ -345,7 +363,7 @@ a:active {
   background-color: #F7E19C;
   color: white;
   padding: 1rem;
-  height: 20rem;
+  height: 25rem;
   border-radius: 30px;
   align-content: center;
 }
@@ -438,8 +456,8 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover:not(.active) {
-	background-color: #FEF9EF;
-    color: black;
+	background: rgba(40, 58, 117, 0.5);
+    color: white;
 }
 
 ul.topnav li a.active {
@@ -794,7 +812,7 @@ label {
 }
 
 /* Style the submit button */
-input[type=submit] {
+input[type=submit], input[type=button] {
   background-color: white;
   color: black;
   padding: 12px 20px;
@@ -866,10 +884,31 @@ input[type=submit] {
 
 .item1 {
   height: 350px;
+  width: auto;
   background-color: #283A75;
   border-radius: 30px;
-  margin-top: 40%;
+  margin-top: 10%;
   margin-left: 12%;
+  display: block;
+  position: relative;
+}
+
+.item1 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item1:hover .settings-overlay {
+  opacity: 0.2;
 }
 
 .item2 {
@@ -879,45 +918,149 @@ input[type=submit] {
   grid-row-end: 4;
   background-color: #EAEDF4;
   border-radius: 30px;
-  margin-top: 40%;
+  margin-top: 10%;
   margin-right: 12%;
+  display: block;
+  position: relative;
+}
+
+.item2 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item2:hover .settings-overlay {
+  opacity: 0.2;
 }
 
 .item3 {
   grid-column-start: 1;
   grid-row-start: 2;
   grid-row-end: 5;
+  width: auto;
   background-color: #FBB883;
   border-radius: 30px;
   margin-left: 12%;
+  display: block;
+  position: relative;
+}
+
+.item3 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item3:hover .settings-overlay {
+  opacity: 0.2;
 }
 
 .item4 {
   height: 350px;
+  width: auto;
   background-color: #F7E19C;
   border-radius: 30px;
   margin-right: 12%;
+  display: block;
+  position: relative;
+}
+
+.item4 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item4:hover .settings-overlay {
+  opacity: 0.2;
 }
 
 .item5 {
   height: 350px;
+  width: auto;
   background-color: #8BB6E0;
   border-radius: 30px;
   margin-left: 12%;
+  display: block;
+  position: relative;
+}
+
+.item5 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item5:hover .settings-overlay {
+  opacity: 0.2;
 }
 
 .item6 {
   height: 350px;
+  width: auto;
   background-color: #A5D4CE;
   border-radius: 30px;
   margin-right: 12%;
+  display: block;
+  position: relative;
+}
+
+.item6 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item6:hover .settings-overlay {
+  opacity: 0.2;
 }
 
 .item7 {
   height: 350px;
   background-color: #EAEDF4;
   border-radius: 30px;
-  /* margin-top: 43%; */
+  margin-top: 11%;
   margin-right: 12%;
 }
 
@@ -964,18 +1107,60 @@ input[type=submit] {
 
 .item13 {
   height: 175px;
+  width: auto;
   background-color: #283A75;
   border-radius: 30px;
   margin-top: 10%;
   margin-left: 12%;
+  display: block;
+  position: relative;
+}
+
+.item13 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item13:hover .settings-overlay {
+  opacity: 0.1;
 }
 
 .item14 {
   height: 175px;
+  width: auto;
   background-color: #EAEDF4;
   border-radius: 30px;
   margin-top: 11%;
   margin-right: 12%;
+  display: block;
+  position: relative;
+}
+
+.item14 > .settings-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.item14:hover .settings-overlay {
+  opacity: 0.1;
 }
 
 .item15 {
@@ -1223,7 +1408,7 @@ input[type=submit] {
 }
 
 .text1 {
-  margin-top: -57.5%;
+  margin-top: -25%;
   text-align: left;
   text-align: justify;
   color: white;
@@ -1240,7 +1425,7 @@ font-size: 32px;
 }
 
 .text2 {
-  margin-top: -60%;
+  margin-top: -20%;
   padding-right: 55%;
   text-align: left;
   color: black;
@@ -1257,8 +1442,9 @@ font-size: 32px;
 }
 
 .text3 {
-  margin-top: 60%;
+  margin-top: 80%;
   padding-right: 45%;
+  padding-top: 10%;
   text-align: left;
   color: black;
   margin-left: 5%;
@@ -1275,7 +1461,7 @@ font-size: 32px;
 }
 
 .text4 {
-  margin-top: -50%;
+  margin-top: -18%;
   padding-right: 45%;
   text-align: left;
   text-align: justify;
@@ -1292,7 +1478,7 @@ font-size: 32px;
 }
 
 .text5 {
-  margin-top: -10%;
+  margin-top: -15%;
   padding-right: 45%;
   text-align: left;
   text-align: justify;
@@ -1305,7 +1491,7 @@ font-size: 32px;
 }
 
 .text6 {
-  margin-top: -5%;
+  margin-top: -10%;
   padding-right: 45%;
   text-align: left;
   text-align: justify;
@@ -1408,11 +1594,11 @@ font-size: 24px;
 }
 
 .text12 {
-  padding-right: 15%;
-  text-align: left;
-  text-align: justify;
+  /* padding-right: 15%; */
+  text-align: center;
+  /* text-align: justify; */
   color: black;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 .text12 > h1 {
@@ -1440,7 +1626,12 @@ font-size: 24px;
 
 .graph-line {
   width: 60%;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid black;
+  margin: auto;
+}
+.graph-line2 {
+  width: 60%;
+  border-bottom: 3px solid white;
   margin: auto;
 }
 
@@ -1464,6 +1655,7 @@ font-size: 24px;
 
 .balanceSheetTitle {
   display: inline-block;
+  margin-top: 10%;
 }
 
 .balanceSheetMid {
@@ -1476,7 +1668,7 @@ font-size: 24px;
 
 .balanceInfo {
   align-content: center;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .balanceInfo > h2 {
@@ -1494,8 +1686,8 @@ font-size: 24px;
 .grossProfitDef {
   text-align: center;
   text-align: justify;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 table.expenseTable, td, th {
@@ -1505,9 +1697,9 @@ table.expenseTable, td, th {
 table.expenseTable {
   width: 90%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 10%;
   border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
   color: black;
 }
 
@@ -1560,7 +1752,7 @@ a.fill-div {
   /* position: relative; */
 
   /* margin-left: 7%; */
-  margin-top: 140px;
+  margin-top: 250px;
   float: right;
 }
 
